@@ -55,7 +55,15 @@ background-color: rgb(0, 0, 0);
 
 
 }
+audio{
+width: 0px;
 
+
+
+
+
+
+}
 
 
 </style>
@@ -92,12 +100,20 @@ background-color: rgb(0, 0, 0);
     </script>
 
 
+<audio id="MGTP" controls autoplay>
+  <source src="MGTP.mp3" type="audio/ogg"
+Your browser does not support the audio element.
+</audio>
 
 
 
-
-
-
+<script>
+  // Select the audio element
+  const audio = document.getElementById("MGTP");
+  
+  // Set volume to 30% (0.0 is mute, 1.0 is 100%)
+  audio.volume = 0.2; 
+</script>
 
 
 
