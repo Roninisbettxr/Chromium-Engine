@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="style.css">
 <style>
 #GoogleTextEngine{
-text-align: center;
+text-align: middle;
 color: white;
 outline: 10;
 font: roboto;
@@ -19,7 +19,7 @@ background-color: rgb(31, 30, 30);
 input{
 align-self: center;
 width: 120vw;
-max-width: 98.7vw;
+max-width: 98.8vw;
 height: 60;
 
 background-color: rgb(31, 30, 30);
@@ -38,8 +38,21 @@ border-top-right-radius: 100px;
 border-bottom-right-radius: 100px;
 }
 
+button{
+background-color: rgb(36, 35, 35);
+width: 100px;
+height: 43;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+button :hover{
+background-color: rgb(0, 0, 0);
 
 
+
+}
 
 
 
@@ -49,9 +62,8 @@ border-bottom-right-radius: 100px;
 
 
 <body>
-<link rel="icon" type="image/x-icon" href="Logo.ico?v=1">
 <p>
-<h3 id="GoogleTextEngine">Chromium</h3>
+<h3 id="GoogleTextEngine">Chromium</h3> <a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=544295376097-ll27qk5hqq8q8cpjn5tq4t466hetkh98.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fchromium-e.vercel.app&response_type=code&scope=openid%20email%20profile&access_type=offline&prompt=select_account"><button>Sign In</button></a>
 </p>
 <form action="https://google.com/search" method="get" class="search-form">
 <input type="search" placeholder="Search The Internet With The Worlds Biggest Internet engine!" name="q">
